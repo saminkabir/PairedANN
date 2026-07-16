@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/VAQ.cpp" "CMakeFiles/VAQ.dir/VAQ.o" "gcc" "CMakeFiles/VAQ.dir/VAQ.o.d"
-  "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/utils/Heap.cpp" "CMakeFiles/VAQ.dir/utils/Heap.o" "gcc" "CMakeFiles/VAQ.dir/utils/Heap.o.d"
+  "/relative_path/Papers/VAQ/bitvecengine/VAQ.cpp" "CMakeFiles/VAQ.dir/VAQ.o" "gcc" "CMakeFiles/VAQ.dir/VAQ.o.d"
+  "/relative_path/Papers/VAQ/bitvecengine/utils/Heap.cpp" "CMakeFiles/VAQ.dir/utils/Heap.o" "gcc" "CMakeFiles/VAQ.dir/utils/Heap.o.d"
   )
 
 # Targets to which this target links.

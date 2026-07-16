@@ -4,7 +4,7 @@ import pandas as pd
 
 mp=dict()
             
-os.chdir('/home/saminyeaser/OSU study/Research-Implementation/models/VAQ22/data/faiss-library/logHNSW')
+os.chdir('/relative_path/Research-Implementation/models/VAQ22/data/faiss-library/logHNSW')
 
 for file in os.listdir():
     with open(file, "r") as f:
@@ -16,7 +16,7 @@ for file in os.listdir():
             mp['HNSW-'+perams[0]+'-'+perams[1]+'-'+perams[3]+'-'+perams[2]+'.pkl']=memory_size
             
 
-os.chdir('/home/saminyeaser/OSU study/Research-Implementation/models/VAQ22/data/faiss-library/flatnavogs')
+os.chdir('/relative_path/Research-Implementation/models/VAQ22/data/faiss-library/flatnavogs')
 for file in os.listdir():
     with open(file, "r") as f:
         data=f.read()
@@ -26,7 +26,7 @@ for file in os.listdir():
             perams=peram.split('-')
             mp['FLATNAV-'+perams[0]+'-'+perams[1]+'-'+perams[2]+'-'+perams[3]+'.pkl']=memory_size
             
-os.chdir('/home/saminyeaser/OSU study/Research-Implementation/models/VAQ22/data/faiss-library/logNSG')
+os.chdir('/relative_path/Research-Implementation/models/VAQ22/data/faiss-library/logNSG')
 for file in os.listdir():
     with open(file, "r") as f:
         data=f.read()

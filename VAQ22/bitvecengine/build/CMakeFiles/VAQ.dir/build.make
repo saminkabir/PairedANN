@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine"
+CMAKE_SOURCE_DIR = "/relative_path/Papers/VAQ/bitvecengine"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/build"
+CMAKE_BINARY_DIR = "/relative_path/Papers/VAQ/bitvecengine/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/VAQ.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/VAQ.dir/flags.make
 CMakeFiles/VAQ.dir/utils/Heap.o: CMakeFiles/VAQ.dir/flags.make
 CMakeFiles/VAQ.dir/utils/Heap.o: ../utils/Heap.cpp
 CMakeFiles/VAQ.dir/utils/Heap.o: CMakeFiles/VAQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VAQ.dir/utils/Heap.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VAQ.dir/utils/Heap.o -MF CMakeFiles/VAQ.dir/utils/Heap.o.d -o CMakeFiles/VAQ.dir/utils/Heap.o -c "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/utils/Heap.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/relative_path/Papers/VAQ/bitvecengine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VAQ.dir/utils/Heap.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VAQ.dir/utils/Heap.o -MF CMakeFiles/VAQ.dir/utils/Heap.o.d -o CMakeFiles/VAQ.dir/utils/Heap.o -c "/relative_path/Papers/VAQ/bitvecengine/utils/Heap.cpp"
 
 CMakeFiles/VAQ.dir/utils/Heap.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VAQ.dir/utils/Heap.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/utils/Heap.cpp" > CMakeFiles/VAQ.dir/utils/Heap.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/relative_path/Papers/VAQ/bitvecengine/utils/Heap.cpp" > CMakeFiles/VAQ.dir/utils/Heap.i
 
 CMakeFiles/VAQ.dir/utils/Heap.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VAQ.dir/utils/Heap.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/utils/Heap.cpp" -o CMakeFiles/VAQ.dir/utils/Heap.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/relative_path/Papers/VAQ/bitvecengine/utils/Heap.cpp" -o CMakeFiles/VAQ.dir/utils/Heap.s
 
 CMakeFiles/VAQ.dir/VAQ.o: CMakeFiles/VAQ.dir/flags.make
 CMakeFiles/VAQ.dir/VAQ.o: ../VAQ.cpp
 CMakeFiles/VAQ.dir/VAQ.o: CMakeFiles/VAQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VAQ.dir/VAQ.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VAQ.dir/VAQ.o -MF CMakeFiles/VAQ.dir/VAQ.o.d -o CMakeFiles/VAQ.dir/VAQ.o -c "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/VAQ.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/relative_path/Papers/VAQ/bitvecengine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VAQ.dir/VAQ.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VAQ.dir/VAQ.o -MF CMakeFiles/VAQ.dir/VAQ.o.d -o CMakeFiles/VAQ.dir/VAQ.o -c "/relative_path/Papers/VAQ/bitvecengine/VAQ.cpp"
 
 CMakeFiles/VAQ.dir/VAQ.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VAQ.dir/VAQ.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/VAQ.cpp" > CMakeFiles/VAQ.dir/VAQ.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/relative_path/Papers/VAQ/bitvecengine/VAQ.cpp" > CMakeFiles/VAQ.dir/VAQ.i
 
 CMakeFiles/VAQ.dir/VAQ.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VAQ.dir/VAQ.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/VAQ.cpp" -o CMakeFiles/VAQ.dir/VAQ.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/relative_path/Papers/VAQ/bitvecengine/VAQ.cpp" -o CMakeFiles/VAQ.dir/VAQ.s
 
 # Object files for target VAQ
 VAQ_OBJECTS = \
@@ -109,7 +109,7 @@ libVAQ.so: CMakeFiles/VAQ.dir/utils/Heap.o
 libVAQ.so: CMakeFiles/VAQ.dir/VAQ.o
 libVAQ.so: CMakeFiles/VAQ.dir/build.make
 libVAQ.so: CMakeFiles/VAQ.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libVAQ.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/relative_path/Papers/VAQ/bitvecengine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libVAQ.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VAQ.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/VAQ.dir/clean:
 .PHONY : CMakeFiles/VAQ.dir/clean
 
 CMakeFiles/VAQ.dir/depend:
-	cd "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine" "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine" "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/build" "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/build" "/home/saminyeaser/OSU study/Papers/VAQ/bitvecengine/build/CMakeFiles/VAQ.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/relative_path/Papers/VAQ/bitvecengine/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/relative_path/Papers/VAQ/bitvecengine" "/relative_path/Papers/VAQ/bitvecengine" "/relative_path/Papers/VAQ/bitvecengine/build" "/relative_path/Papers/VAQ/bitvecengine/build" "/relative_path/Papers/VAQ/bitvecengine/build/CMakeFiles/VAQ.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/VAQ.dir/depend
 
