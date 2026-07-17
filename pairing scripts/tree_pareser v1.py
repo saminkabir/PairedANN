@@ -6,8 +6,8 @@ from collections import defaultdict
 from multiprocessing import Process
 import numpy as np
 
-dataset_path = '/data/kabir/similarity-search/dataset/'
-pickle_path='/data/kabir/similarity-search/models/results_pickles_v8/'
+dataset_path = '/data/[username]/similarity-search/dataset/'
+pickle_path='/data/[username]/similarity-search/models/results_pickles_v8/'
 
 def read_vecs(filePath):
     return ps.read_vecs(dataset_path + filePath)
@@ -42,7 +42,7 @@ def refined_recall(I_list, gt):
         total_hits += hits
     return total_hits / (nq * k_gt), total_ids/(nq * k_gt)
 
-# os.chdir('/data/kabir/similarity-search/models/PM-LSH/pmlsh/logs')
+# os.chdir('/data/[username]/similarity-search/models/PM-LSH/pmlsh/logs')
     
 dataset_infos=['deep', 'glove', 'sun', 'audio', 'millionSong', 'nuswide', 'MNIST', 'notre', 'sift', 'imageNet','deep_hundred', 'glove_hundred', 'sun_hundred', 'audio_hundred', 'millionSong_hundred', 'nuswide_hundred', 'MNIST_hundred', 'notre_hundred', 'sift_twenty', 'imageNet_hundred']
 

@@ -4,7 +4,7 @@
         "conan": {}
     },
     "include": [
-        "/data/kabir/similarity-search/models/PM-LSH/pmlsh/build/CMakePresets.json",
-        "/data/kabir/similarity-search/models/pairedANNS/PM-LSH/pmlsh/build/CMakePresets.json"
+        "/data/[username]/similarity-search/models/PM-LSH/pmlsh/build/CMakePresets.json",
+        "/data/[username]/similarity-search/models/pairedANNS/PM-LSH/pmlsh/build/CMakePresets.json"
     ]
 }

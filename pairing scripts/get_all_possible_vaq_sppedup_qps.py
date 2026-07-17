@@ -3,7 +3,7 @@ import pandas as pd
 
 mem_mp={}
 
-path='/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-[id]/'
+path='/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-[id]/'
 
 for id in ['35','36','37','38','39','44']:
     current_path=path.replace('[id]',id)
@@ -16,7 +16,7 @@ for id in ['35','36','37','38','39','44']:
                 mem=int(data.split('Maximum resident set size (kbytes): ')[1].split('\n')[0])
                 mem_mp[raw_file_name]=mem
 
-path='/data/kabir/similarity-search/models/vaq-testing/analyse-mult-vaq-[id]/'
+path='/data/[username]/similarity-search/models/vaq-testing/analyse-mult-vaq-[id]/'
 
 for id in ['40']:
     current_path=path.replace('[id]',id)
@@ -34,7 +34,7 @@ for id in ['40']:
     
 
 
-path='/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-[id]/finalTests2/'
+path='/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-[id]/finalTests2/'
 
 recall_qps_list=[]
 for id in ['35','36','37','38','39','44']:
@@ -70,7 +70,7 @@ for id in ['35','36','37','38','39','44']:
                         qn=10000
                     recall_qps_list.append([dataset,recalls[i],qn/qpss[i],construction_time,mem_mp[fileName],i+1,bits,fileName,id])
     
-path='/data/kabir/similarity-search/models/vaq-testing/analyse-mult-vaq-[id]/finalTests2/'
+path='/data/[username]/similarity-search/models/vaq-testing/analyse-mult-vaq-[id]/finalTests2/'
 
                     
 for id in ['40']:
@@ -112,7 +112,7 @@ for id in ['40']:
         
 y=['dataset','recall','qps','construction_time','memory','refinementx','bits','fileName','id']
 df_out = pd.DataFrame(recall_qps_list, columns=y)
-os.chdir('/data/kabir/similarity-search/models/polyvector_analysis_v1')
+os.chdir('/data/[username]/similarity-search/models/polyvector_analysis_v1')
 # save as CSV
 output_file = "all_possible_standalone_vaq.csv"
 df_out.to_csv(output_file, index=False) 

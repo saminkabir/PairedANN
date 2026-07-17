@@ -4,7 +4,7 @@ import pandas as pd
 from multiprocessing import Process
 
 
-path='/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-35'
+path='/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-35'
 os.chdir(path)
 
 mem_mp={}
@@ -24,7 +24,7 @@ print(mem_mp)
 
 
 
-path='/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-35/finalTests2/'
+path='/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-35/finalTests2/'
 files=os.listdir(path)
 datasets=set()
 best_recalls=dict()
@@ -79,7 +79,7 @@ for k in best_recalls.keys():
 y=['model','dataset','parameter','construction-time','recallx1','searchx1','recallx2','searchx2','recallx3','searchx3','recallx4','searchx4','recallx5','searchx5','memory_usage','fileName']
 
 df_out = pd.DataFrame(results, columns=y)
-os.chdir('/data/kabir/similarity-search/models/polyvector_analysis_v1')
+os.chdir('/data/[username]/similarity-search/models/polyvector_analysis_v1')
 # save as CSV
 output_file = "standalone_vaq.csv"
 df_out.to_csv(output_file, index=False) 

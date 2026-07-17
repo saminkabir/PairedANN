@@ -2,7 +2,7 @@ import pickle
 import os
 import pandas as pd
 import pysvs as ps
-pickle_path='/data/kabir/similarity-search/models/results_pickles_v8/'
+pickle_path='/data/[username]/similarity-search/models/results_pickles_v8/'
 all_results=[]
 cnt=0
 def getStoredData(dataset,model,k):

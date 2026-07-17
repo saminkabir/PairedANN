@@ -5,9 +5,9 @@ import pysvs as ps
 from collections import defaultdict
 from multiprocessing import Process
 
-# os.chdir('/data/kabir/similarity-search/models/results_pickles_v7')
-dataset_path = '/data/kabir/similarity-search/dataset/'
-pickle_path='/data/kabir/similarity-search/models/results_pickles_v7/'
+# os.chdir('/data/[username]/similarity-search/models/results_pickles_v7')
+dataset_path = '/data/[username]/similarity-search/dataset/'
+pickle_path='/data/[username]/similarity-search/models/results_pickles_v7/'
 
 def calculate_recall_at(ground_truth, I, k1, k2):
     return ps.k_recall_at(ground_truth, I, k1, k2)
@@ -115,8 +115,8 @@ def gen_aug_2(_dataset,dummy):
                 k=100
             vaq_file_name=row['fileName']
             vaq_file_name=vaq_file_name.replace('vaq-log-','').replace('.txt','-'+str(k)+'.ivecs')
-            # /data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/
-            I_NN=ps.read_vecs('/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/'+vaq_file_name)
+            # /data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/
+            I_NN=ps.read_vecs('/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/'+vaq_file_name)
             xb,xq,gt=get_data_generic(dataset)
             print(file1)
             I1=getStoredData(file1)
@@ -142,8 +142,8 @@ def gen_aug_2(_dataset,dummy):
                 k=100
             vaq_file_name=row['fileName']
             vaq_file_name=vaq_file_name.replace('vaq-log-','').replace('.txt','-'+str(k)+'.ivecs')
-            # /data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/
-            I_NN=ps.read_vecs('/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/'+vaq_file_name)
+            # /data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/
+            I_NN=ps.read_vecs('/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/'+vaq_file_name)
             xb,xq,gt=get_data_generic(dataset)
             print(file1)
             I1=getStoredData(file1)
@@ -169,8 +169,8 @@ def gen_aug_2(_dataset,dummy):
                 k=100
             vaq_file_name=row['fileName']
             vaq_file_name=vaq_file_name.replace('vaq-log-','').replace('.txt','-'+str(k)+'.ivecs')
-            # /data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/
-            I_NN=ps.read_vecs('/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/'+vaq_file_name)
+            # /data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/
+            I_NN=ps.read_vecs('/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/'+vaq_file_name)
             xb,xq,gt=get_data_generic(dataset)
             print(file1)
             I1=getStoredData(file1)

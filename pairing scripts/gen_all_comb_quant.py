@@ -1,6 +1,6 @@
 import pandas as pd
 import pysvs as ps
-pickle_path='/data/kabir/similarity-search/models/results_pickles_v7/'
+pickle_path='/data/[username]/similarity-search/models/results_pickles_v7/'
 from multiprocessing import Process
 
 import pickle
@@ -8,8 +8,8 @@ import pickle
 file_path = "c_quantization (copy).csv"
 df = pd.read_csv(file_path)
 
-dataset_path = '/data/kabir/similarity-search/dataset/'
-pickle_path='/data/kabir/similarity-search/models/results_pickles_v7/'
+dataset_path = '/data/[username]/similarity-search/dataset/'
+pickle_path='/data/[username]/similarity-search/models/results_pickles_v7/'
 
 def calculate_recall_at(ground_truth, I, k1, k2):
     return ps.k_recall_at(ground_truth, I, k1, k2)
@@ -46,7 +46,7 @@ def get_I(model,fileName,dataset):
     if model=='VAQ':
         vaq_file_name=fileName
         vaq_file_name=vaq_file_name.replace('vaq-log-','').replace('.txt','-'+str(k)+'.ivecs')
-        I_NN=ps.read_vecs('/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/'+vaq_file_name)
+        I_NN=ps.read_vecs('/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-34/results/'+vaq_file_name)
         # print(vaq_file_name)
         return I_NN
     file_Name=None

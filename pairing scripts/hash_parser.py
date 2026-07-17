@@ -3,7 +3,7 @@ import re
 import pysvs as ps
 import csv
 
-dataset_path = '/data/kabir/similarity-search/dataset/'
+dataset_path = '/data/[username]/similarity-search/dataset/'
 
 peram_mp=dict()
 
@@ -107,9 +107,9 @@ def refined_recall(I_list, gt):
         total_hits += hits
     return total_hits / (nq * k_gt), total_ids/(nq * k_gt)
 
-os.chdir('/data/kabir/similarity-search/models/PM-LSH/pmlsh/logs')
+os.chdir('/data/[username]/similarity-search/models/PM-LSH/pmlsh/logs')
 files=os.listdir()
-vecs=os.listdir('/data/kabir/similarity-search/models/PM-LSH/pmlsh/build/')
+vecs=os.listdir('/data/[username]/similarity-search/models/PM-LSH/pmlsh/build/')
 dataset_infos=['deep', 'glove', 'sun', 'audio', 'millionSong', 'nuswide', 'MNIST', 'notre', 'sift', 'imageNet','deep_hundred', 'glove_hundred', 'sun_hundred', 'audio_hundred', 'millionSong_hundred', 'nuswide_hundred', 'MNIST_hundred', 'notre_hundred', 'sift_twenty', 'imageNet_hundred']
 # dataset_infos=['audio']
 dct_pmlsh=dict()
@@ -143,7 +143,7 @@ for dataset in dataset_infos:
                 results['construction_time']=results['hashing_time']+results['build_time']
                 results['qps']=1/(results['avg_query_time']/1000)
                 if file.replace('.txt','.ivecs') in vecs:
-                    I=ps.read_vecs('/data/kabir/similarity-search/models/PM-LSH/pmlsh/build/' + file.replace('.txt','.ivecs'))
+                    I=ps.read_vecs('/data/[username]/similarity-search/models/PM-LSH/pmlsh/build/' + file.replace('.txt','.ivecs'))
                     # I = I + 1
                     results['I']=I
                     pmlsh_logids.add(file.replace(dataset+'-','').replace('.txt',''))
@@ -151,9 +151,9 @@ for dataset in dataset_infos:
                     dct_pmlsh[dataset].append(results)
 print(dct_pmlsh)
 
-vecs=os.listdir('/data/kabir/similarity-search/models/DB-LSH2/DB-LSH/dbLSH/build')
+vecs=os.listdir('/data/[username]/similarity-search/models/DB-LSH2/DB-LSH/dbLSH/build')
 
-os.chdir('/data/kabir/similarity-search/models/DB-LSH2/DB-LSH/dbLSH/scripts')
+os.chdir('/data/[username]/similarity-search/models/DB-LSH2/DB-LSH/dbLSH/scripts')
 dct_dblsh=dict()
 
 with open('merged2.txt', "r") as f:
@@ -188,7 +188,7 @@ with open('merged2.txt', "r") as f:
         
         results['construction_time']=results['computing_time']+results['build_time']
         results['qps']=1/(results['avg_query_time']/1000)
-        I=ps.read_vecs('/data/kabir/similarity-search/models/DB-LSH2/DB-LSH/dbLSH/build/' + results['model_id'])
+        I=ps.read_vecs('/data/[username]/similarity-search/models/DB-LSH2/DB-LSH/dbLSH/build/' + results['model_id'])
         results['I']=I
         if not dataset in dct_dblsh:
             dct_dblsh[dataset]=[]
@@ -213,7 +213,7 @@ for dataset in dataset_infos:
             all_results.append(['DB-LSH+PM-LSH',dataset,rc,min(dblsh_result['qps'],pmlsh_result['qps']),max(dblsh_result['construction_time'],pmlsh_result['construction_time']),1/((dblsh_result['avg_query_time']+pmlsh_result['avg_query_time'])/1000),(dblsh_result['construction_time']+pmlsh_result['construction_time']),get_peram(pmlsh_result['logId']),get_peram(dblsh_result['logId'])])
         
         
-os.chdir('/data/kabir/similarity-search/models/polyvector_analysis_v1')
+os.chdir('/data/[username]/similarity-search/models/polyvector_analysis_v1')
 header = ['Method', 'Dataset','Refined Recall', 'QPS (parallel)', 'Construction Time (parallel)', 'QPS (sequential)', 'Construction Time (sequential)', 'PM-LSH peram', 'DB-LSH peram']
 
 with open('hash_results.csv', 'w', newline='') as f:

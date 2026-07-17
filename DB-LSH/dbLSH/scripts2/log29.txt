@@ -7,7 +7,7 @@ beta=     0.85
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/cifar/
+Load from new file: /data/[username]/similarity-search/dataset/cifar/
 N=    50000
 dim=  512
 
@@ -71,7 +71,7 @@ beta=     0.7
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/cifar/
+Load from new file: /data/[username]/similarity-search/dataset/cifar/
 N=    50000
 dim=  512
 
@@ -135,7 +135,7 @@ beta=     0.6
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/cifar/
+Load from new file: /data/[username]/similarity-search/dataset/cifar/
 N=    50000
 dim=  512
 
@@ -199,7 +199,7 @@ beta=     0.45
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/cifar/
+Load from new file: /data/[username]/similarity-search/dataset/cifar/
 N=    50000
 dim=  512
 
@@ -263,7 +263,7 @@ beta=     0.85
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/deep/
+Load from new file: /data/[username]/similarity-search/dataset/deep/
 N=    1000000
 dim=  256
 
@@ -327,7 +327,7 @@ beta=     0.7
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/deep/
+Load from new file: /data/[username]/similarity-search/dataset/deep/
 N=    1000000
 dim=  256
 
@@ -391,7 +391,7 @@ beta=     0.6
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/deep/
+Load from new file: /data/[username]/similarity-search/dataset/deep/
 N=    1000000
 dim=  256
 
@@ -455,7 +455,7 @@ beta=     0.45
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/deep/
+Load from new file: /data/[username]/similarity-search/dataset/deep/
 N=    1000000
 dim=  256
 
@@ -519,7 +519,7 @@ beta=     0.85
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/MNIST/
+Load from new file: /data/[username]/similarity-search/dataset/MNIST/
 N=    69000
 dim=  784
 
@@ -583,7 +583,7 @@ beta=     0.7
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/MNIST/
+Load from new file: /data/[username]/similarity-search/dataset/MNIST/
 N=    69000
 dim=  784
 
@@ -647,7 +647,7 @@ beta=     0.6
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/MNIST/
+Load from new file: /data/[username]/similarity-search/dataset/MNIST/
 N=    69000
 dim=  784
 
@@ -711,7 +711,7 @@ beta=     0.45
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/MNIST/
+Load from new file: /data/[username]/similarity-search/dataset/MNIST/
 N=    69000
 dim=  784
 
@@ -775,7 +775,7 @@ beta=     0.85
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/imageNet/
+Load from new file: /data/[username]/similarity-search/dataset/imageNet/
 N=    2340373
 dim=  150
 
@@ -839,7 +839,7 @@ beta=     0.7
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/imageNet/
+Load from new file: /data/[username]/similarity-search/dataset/imageNet/
 N=    2340373
 dim=  150
 
@@ -903,7 +903,7 @@ beta=     0.6
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/imageNet/
+Load from new file: /data/[username]/similarity-search/dataset/imageNet/
 N=    2340373
 dim=  150
 
@@ -967,7 +967,7 @@ beta=     0.45
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/imageNet/
+Load from new file: /data/[username]/similarity-search/dataset/imageNet/
 N=    2340373
 dim=  150
 
@@ -1031,7 +1031,7 @@ beta=     0.85
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/glove/
+Load from new file: /data/[username]/similarity-search/dataset/glove/
 N=    1192514
 dim=  100
 
@@ -1095,7 +1095,7 @@ beta=     0.7
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/glove/
+Load from new file: /data/[username]/similarity-search/dataset/glove/
 N=    1192514
 dim=  100
 
@@ -1159,7 +1159,7 @@ beta=     0.6
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/glove/
+Load from new file: /data/[username]/similarity-search/dataset/glove/
 N=    1192514
 dim=  100
 
@@ -1223,7 +1223,7 @@ beta=     0.45
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/glove/
+Load from new file: /data/[username]/similarity-search/dataset/glove/
 N=    1192514
 dim=  100
 
@@ -1287,7 +1287,7 @@ beta=     0.85
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/random/
+Load from new file: /data/[username]/similarity-search/dataset/random/
 N=    1000000
 dim=  100
 
@@ -1351,7 +1351,7 @@ beta=     0.7
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/random/
+Load from new file: /data/[username]/similarity-search/dataset/random/
 N=    1000000
 dim=  100
 
@@ -1415,7 +1415,7 @@ beta=     0.6
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/random/
+Load from new file: /data/[username]/similarity-search/dataset/random/
 N=    1000000
 dim=  100
 
@@ -1479,7 +1479,7 @@ beta=     0.45
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/random/
+Load from new file: /data/[username]/similarity-search/dataset/random/
 N=    1000000
 dim=  100
 
@@ -1543,7 +1543,7 @@ beta=     0.85
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/movielens/
+Load from new file: /data/[username]/similarity-search/dataset/movielens/
 N=    10677
 dim=  150
 
@@ -1607,7 +1607,7 @@ beta=     0.7
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/movielens/
+Load from new file: /data/[username]/similarity-search/dataset/movielens/
 N=    10677
 dim=  150
 
@@ -1671,7 +1671,7 @@ beta=     0.6
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/movielens/
+Load from new file: /data/[username]/similarity-search/dataset/movielens/
 N=    10677
 dim=  150
 
@@ -1735,7 +1735,7 @@ beta=     0.45
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/movielens/
+Load from new file: /data/[username]/similarity-search/dataset/movielens/
 N=    10677
 dim=  150
 
@@ -1799,7 +1799,7 @@ beta=     0.85
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/yahoomusic/
+Load from new file: /data/[username]/similarity-search/dataset/yahoomusic/
 N=    136736
 dim=  300
 
@@ -1863,7 +1863,7 @@ beta=     0.7
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/yahoomusic/
+Load from new file: /data/[username]/similarity-search/dataset/yahoomusic/
 N=    136736
 dim=  300
 
@@ -1927,7 +1927,7 @@ beta=     0.6
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/yahoomusic/
+Load from new file: /data/[username]/similarity-search/dataset/yahoomusic/
 N=    136736
 dim=  300
 
@@ -1991,7 +1991,7 @@ beta=     0.45
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/yahoomusic/
+Load from new file: /data/[username]/similarity-search/dataset/yahoomusic/
 N=    136736
 dim=  300
 
@@ -2055,7 +2055,7 @@ beta=     0.85
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/netflix/
+Load from new file: /data/[username]/similarity-search/dataset/netflix/
 N=    17770
 dim=  300
 
@@ -2119,7 +2119,7 @@ beta=     0.7
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/netflix/
+Load from new file: /data/[username]/similarity-search/dataset/netflix/
 N=    17770
 dim=  300
 
@@ -2183,7 +2183,7 @@ beta=     0.6
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/netflix/
+Load from new file: /data/[username]/similarity-search/dataset/netflix/
 N=    17770
 dim=  300
 
@@ -2247,7 +2247,7 @@ beta=     0.45
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/netflix/
+Load from new file: /data/[username]/similarity-search/dataset/netflix/
 N=    17770
 dim=  300
 

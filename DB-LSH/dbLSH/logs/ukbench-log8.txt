@@ -7,7 +7,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ukbench/
+Load from new file: /data/[username]/similarity-search/dataset/ukbench/
 N=    1097907
 dim=  128
 

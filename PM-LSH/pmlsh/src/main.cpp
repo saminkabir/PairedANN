@@ -93,8 +93,8 @@ int main(int argc, char const* argv[])
 	}
 
 	#if defined(unix) || defined(__unix__)
-		Config::highDataFilePath = "/data/kabir/similarity-search/dataset/" + Config::dataSetName + "/base.fvecs";
-		Config::highQueryFilePath = "/data/kabir/similarity-search/dataset/" + Config::dataSetName + "/query.fvecs";
+		Config::highDataFilePath = "/data/[username]/similarity-search/dataset/" + Config::dataSetName + "/base.fvecs";
+		Config::highQueryFilePath = "/data/[username]/similarity-search/dataset/" + Config::dataSetName + "/query.fvecs";
 		Config::knnResultFilePath = "./../../dataset/ANN/" + Config::dataSetName + "_result_pmlsh.txt";
 	#else
 		Config::highDataFilePath = "E:\\Dataset_for_c\\" + Config::dataSetName + ".data_all";

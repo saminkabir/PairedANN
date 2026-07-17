@@ -4,9 +4,9 @@ import pandas as pd
 import pysvs as ps
 from multiprocessing import Process
 from collections import defaultdict
-# os.chdir('/data/kabir/similarity-search/models/results_pickles_v7')
-dataset_path = '/data/kabir/similarity-search/dataset/'
-pickle_path='/data/kabir/similarity-search/models/results_pickles_v7/'
+# os.chdir('/data/[username]/similarity-search/models/results_pickles_v7')
+dataset_path = '/data/[username]/similarity-search/dataset/'
+pickle_path='/data/[username]/similarity-search/models/results_pickles_v7/'
 
 def calculate_recall_at(ground_truth, I, k1, k2):
     return ps.k_recall_at(ground_truth, I, k1, k2)

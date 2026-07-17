@@ -1,10 +1,10 @@
 import pickle
-pickle_path='/data/kabir/similarity-search/models/results_pickles_v8/'
+pickle_path='/data/[username]/similarity-search/models/results_pickles_v8/'
 import numpy as np
 import pandas as pd
 import pysvs as ps
 
-dataset_path = '/data/kabir/similarity-search/dataset/'
+dataset_path = '/data/[username]/similarity-search/dataset/'
 
 file_path = "c_quantization (copy).csv"
 df = pd.read_csv(file_path)

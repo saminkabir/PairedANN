@@ -7,7 +7,7 @@ beta=     0.1
 R_min=    300
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/uqv/
+Load from new file: /data/[username]/similarity-search/dataset/uqv/
 N=    1000000
 dim=  256
 

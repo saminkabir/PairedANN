@@ -7,7 +7,7 @@ beta=     0.25
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/astro1m/
+Load from new file: /data/[username]/similarity-search/dataset/astro1m/
 N=    1000000
 dim=  256
 
@@ -71,7 +71,7 @@ beta=     0.35
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/astro1m/
+Load from new file: /data/[username]/similarity-search/dataset/astro1m/
 N=    1000000
 dim=  256
 
@@ -135,7 +135,7 @@ beta=     0.5
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/astro1m/
+Load from new file: /data/[username]/similarity-search/dataset/astro1m/
 N=    1000000
 dim=  256
 
@@ -199,7 +199,7 @@ beta=     0.55
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/astro1m/
+Load from new file: /data/[username]/similarity-search/dataset/astro1m/
 N=    1000000
 dim=  256
 
@@ -263,7 +263,7 @@ beta=     0.65
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/astro1m/
+Load from new file: /data/[username]/similarity-search/dataset/astro1m/
 N=    1000000
 dim=  256
 

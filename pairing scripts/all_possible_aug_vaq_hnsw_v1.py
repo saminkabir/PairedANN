@@ -5,10 +5,10 @@ import pysvs as ps
 from collections import defaultdict
 from multiprocessing import Process
 
-# os.chdir('/data/kabir/similarity-search/models/results_pickles_v7')
-dataset_path = '/data/kabir/similarity-search/dataset/'
-pickle_path_1='/data/kabir/similarity-search/models/results_pickles_v7/'
-pickle_path_2='/data/kabir/similarity-search/models/results_pickles_v8/'
+# os.chdir('/data/[username]/similarity-search/models/results_pickles_v7')
+dataset_path = '/data/[username]/similarity-search/dataset/'
+pickle_path_1='/data/[username]/similarity-search/models/results_pickles_v7/'
+pickle_path_2='/data/[username]/similarity-search/models/results_pickles_v8/'
 
 
 # Load the CSV
@@ -111,8 +111,8 @@ def gen_all_possible_comb_vaq_hnsw_comb(dataset,ref):
         if dataset=='sift':
             k=100
             qn=10000
-        path1='/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-[id]/results/'.replace('[id]',str(ids[i]))
-        path2='/data/kabir/similarity-search/models/vaq-testing/analyse-mult-vaq-[id]/results/'.replace('[id]',str(ids[i]))
+        path1='/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-[id]/results/'.replace('[id]',str(ids[i]))
+        path2='/data/[username]/similarity-search/models/vaq-testing/analyse-mult-vaq-[id]/results/'.replace('[id]',str(ids[i]))
         
         vaq_file_name=vaq_file_list[i]
         raw_vaq_file_name=vaq_file_name+''
@@ -144,7 +144,7 @@ def compute(dataset,dummy):
     all_results=gen_all_possible_comb_vaq_hnsw_comb(dataset,10)
     y=['dataset','hnsw_file_path','raw_vaq_file_path','vaq_file_path','parallal qps','sequential qps','parallel indexing time','sequential indexing time','refined recall','majority voting recall']
     df_out = pd.DataFrame(all_results, columns=y)
-    os.chdir('/data/kabir/similarity-search/models/polyvector_analysis_v1')
+    os.chdir('/data/[username]/similarity-search/models/polyvector_analysis_v1')
     # save as CSV
     output_file = 'all_possible_vaq_hnsw_combo_v1'+dataset+'.csv'
     df_out.to_csv(output_file, index=False) 

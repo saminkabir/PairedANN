@@ -9,7 +9,7 @@ import numpy as np
 import math
 from multiprocessing import Process, Queue
 
-dataset_path = '/data/kabir/similarity-search/dataset/'
+dataset_path = '/data/[username]/similarity-search/dataset/'
 
 def read_vecs(filePath):
     return ps.read_vecs(dataset_path + filePath)
@@ -112,7 +112,7 @@ def get_dataset(fileName):
 
 def get_memory_info_PQ_OPQ_IVFPQ():
     global memory_results
-    os.chdir('/data/kabir/similarity-search/models/VAQ-SINGLE/data/faiss-library/logIVFPQ')
+    os.chdir('/data/[username]/similarity-search/models/VAQ-SINGLE/data/faiss-library/logIVFPQ')
     for file in os.listdir():
         with open(file, "r", encoding="utf-8") as f:
             content = f.read()
@@ -152,7 +152,7 @@ vaq_standalone_results=[]
                     
 def get_hnsw_results():
     global results
-    os.chdir('/data/kabir/similarity-search/models/results_pickles_v8')
+    os.chdir('/data/[username]/similarity-search/models/results_pickles_v8')
     for file in os.listdir():
         if 'HNSW' in file and '.pkl' in file:
             with open(file, "rb") as f:
@@ -191,7 +191,7 @@ def get_hnsw_results():
                     
 def get_nsg_results():
     global results
-    os.chdir('/data/kabir/similarity-search/models/results_pickles_v8')
+    os.chdir('/data/[username]/similarity-search/models/results_pickles_v8')
     for file in os.listdir():
         if 'NSG' in file and '.pkl' in file:
             with open(file, "rb") as f:
@@ -230,7 +230,7 @@ def get_nsg_results():
                     
 def get_flatnav_results():
     global results
-    os.chdir('/data/kabir/similarity-search/models/results_pickles_v7')
+    os.chdir('/data/[username]/similarity-search/models/results_pickles_v7')
     for file in os.listdir():
         if 'FLATNAV' in file and '.pkl' in file:
             with open(file, "rb") as f:
@@ -276,7 +276,7 @@ def get_memory_info_VAQ(location):
                 memory=int(content.split("Maximum resident set size (kbytes): ")[1].split('\n')[0])
                 ks='vaq-log-'+file.replace('-mem.txt','')
                 memory_results[ks]=int(memory)
-    os.chdir('/data/kabir/similarity-search/models/polyvector_analysis_v1')
+    os.chdir('/data/[username]/similarity-search/models/polyvector_analysis_v1')
 
 
 
@@ -330,7 +330,7 @@ def extract_vaq_log(location,id):
                                 'bits': int(ks.split('VAQ')[1].split('m')[0])
                             }
                             results.append(ds)
-    os.chdir('/data/kabir/similarity-search/models/polyvector_analysis_v1')
+    os.chdir('/data/[username]/similarity-search/models/polyvector_analysis_v1')
 
 
 
@@ -341,7 +341,7 @@ def extract_vaq_log(location,id):
                     
 def get_annoy_results():
     global results
-    os.chdir('/data/kabir/similarity-search/models/results_pickles_v8')
+    os.chdir('/data/[username]/similarity-search/models/results_pickles_v8')
     for file in os.listdir():
         if 'annoy' in file and '.pkl' in file:
             with open(file, "rb") as f:
@@ -380,7 +380,7 @@ def get_annoy_results():
 
 def get_scann_results():
     global results
-    os.chdir('/data/kabir/similarity-search/models/results_pickles_v8')
+    os.chdir('/data/[username]/similarity-search/models/results_pickles_v8')
     for file in os.listdir():
         if 'scann' in file and '.pkl' in file:
             with open(file, "rb") as f:
@@ -416,7 +416,7 @@ def get_scann_results():
 
 def get_pq_results():
     global results
-    os.chdir('/data/kabir/similarity-search/models/results_pickles_v8')
+    os.chdir('/data/[username]/similarity-search/models/results_pickles_v8')
     for file in os.listdir():
         if 'PQ' in file and ('-8.pkl' in file or '-4.pkl' in file):
             with open(file, "rb") as f:
@@ -458,11 +458,11 @@ def get_pq_results():
     return results
 
 get_memory_info_PQ_OPQ_IVFPQ()
-get_memory_info_generic('scann','/data/kabir/similarity-search/models/VAQ-SINGLE/data/faiss-library/logScann')
-get_memory_info_generic('annoy','/data/kabir/similarity-search/models/VAQ-SINGLE/data/faiss-library/logANNOY')
-get_memory_info_generic('HNSW','/data/kabir/similarity-search/models/VAQ-SINGLE/data/faiss-library/logHNSW')
-get_memory_info_generic('NSG','/data/kabir/similarity-search/models/VAQ-SINGLE/data/faiss-library/logNSG')
-get_memory_info_generic('FLATNAV','/data/kabir/similarity-search/models/VAQ-SINGLE/data/faiss-library/flatnavogs')
+get_memory_info_generic('scann','/data/[username]/similarity-search/models/VAQ-SINGLE/data/faiss-library/logScann')
+get_memory_info_generic('annoy','/data/[username]/similarity-search/models/VAQ-SINGLE/data/faiss-library/logANNOY')
+get_memory_info_generic('HNSW','/data/[username]/similarity-search/models/VAQ-SINGLE/data/faiss-library/logHNSW')
+get_memory_info_generic('NSG','/data/[username]/similarity-search/models/VAQ-SINGLE/data/faiss-library/logNSG')
+get_memory_info_generic('FLATNAV','/data/[username]/similarity-search/models/VAQ-SINGLE/data/faiss-library/flatnavogs')
 
                 
 
@@ -472,9 +472,9 @@ get_flatnav_results()
 get_annoy_results()
 get_scann_results()
 get_pq_results()
-# extract_vaq_log('/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-42/finalTests2',42)
-# extract_vaq_log('/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-41/finalTests2',41)
-extract_vaq_log('/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-46/finalTests2',46)
+# extract_vaq_log('/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-42/finalTests2',42)
+# extract_vaq_log('/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-41/finalTests2',41)
+extract_vaq_log('/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-46/finalTests2',46)
  
 vaq_standalone=[]
 for result in results:
@@ -491,7 +491,7 @@ for result in results:
 
 y=['dataset','multiplier','recall','qps','construction_time','memory','refinementx','bits','fileName','id']
 df_out = pd.DataFrame(vaq_standalone, columns=y)
-os.chdir('/data/kabir/similarity-search/models/polyvector_analysis_v1')
+os.chdir('/data/[username]/similarity-search/models/polyvector_analysis_v1')
 # save as CSV
 output_file = "all_possible_standalone_vaq_new_datasets_k_20.csv"
 # df_out.to_csv(output_file, index=False) 
@@ -530,7 +530,7 @@ def get_graph_results(dataset,test):
                         results_augmented_graph.append(data)
     df_standalone_graph = pd.DataFrame(results_standalone_graph, columns=columns_standalone_graph)
     df_augmented_graph = pd.DataFrame(results_augmented_graph, columns=columns_augmented_graph)
-    os.chdir('/data/kabir/similarity-search/models/polyvector_analysis_v1')
+    os.chdir('/data/[username]/similarity-search/models/polyvector_analysis_v1')
     df_standalone_graph.to_csv('graph_new_datasets_standalone_results_rc_v2/new_datasets_standalone_graph_methods('+dataset+').csv', index=False) 
     df_augmented_graph.to_csv('graph_new_datasets_augmented_results_rc_v2/new_datasets_augmenred_graph_methods('+dataset+').csv', index=False) 
     
@@ -566,7 +566,7 @@ def get_tree_results(dataset,test):
                         data=['scann-annoy',result1['dataset'],max(result1['construction_time'],result2['construction_time']),result1['construction_time']+result2['construction_time'],'-',max(result1['search_timex1'],result2['search_timex1']),result1['search_timex1']+result2['search_timex1'],'-',augmented_model_recall,result1['memory']+result2['memory'],result1['ks'],result2['ks']]
                         results_augmented_graph.append(data)
     df_augmented_graph = pd.DataFrame(results_augmented_graph, columns=columns_augmented_tree)
-    os.chdir('/data/kabir/similarity-search/models/polyvector_analysis_v1')
+    os.chdir('/data/[username]/similarity-search/models/polyvector_analysis_v1')
     df_augmented_graph.to_csv('tree_new_datasets_results_k_20/new_datasets_augmenred_tree_methods('+dataset+').csv', index=False) 
 
 quantization_models=['VAQ','PQ','OPQ','IVFPQ']
@@ -607,7 +607,7 @@ def get_quant_results(dataset,test):
                         
     df_standalone_graph = pd.DataFrame(results_standalone_graph, columns=columns_standalone_quant)
     df_augmented_graph = pd.DataFrame(results_augmented_graph, columns=columns_augmented_quant)
-    os.chdir('/data/kabir/similarity-search/models/polyvector_analysis_v1')
+    os.chdir('/data/[username]/similarity-search/models/polyvector_analysis_v1')
     df_standalone_graph.to_csv('quant_new_datasets_standalone_results_k_20/new_datasets_standalone_quant_methods('+dataset+').csv', index=False) 
     df_augmented_graph.to_csv('quant_new_datasets_augmented_results_k_20/new_datasets_augmenred_quant_methods('+dataset+').csv', index=False) 
 

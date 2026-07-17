@@ -6,9 +6,9 @@ from collections import defaultdict
 from multiprocessing import Process
 import numpy as np
 
-# os.chdir('/data/kabir/similarity-search/models/results_pickles_v7')
-dataset_path = '/data/kabir/similarity-search/dataset/'
-pickle_path='/data/kabir/similarity-search/models/results_pickles_v7/'
+# os.chdir('/data/[username]/similarity-search/models/results_pickles_v7')
+dataset_path = '/data/[username]/similarity-search/dataset/'
+pickle_path='/data/[username]/similarity-search/models/results_pickles_v7/'
 
 
 # Load the CSV
@@ -159,8 +159,8 @@ def gen_all_possible_comb_vaq_hnsw_comb(dataset,ref):
         if dataset=='sift':
             k=100
             qn=10000
-        path1='/data/kabir/similarity-search/models/vaq-testing/analyse-multi-vaq-[id]/results/'.replace('[id]',str(ids[i]))
-        path2='/data/kabir/similarity-search/models/vaq-testing/analyse-mult-vaq-[id]/results/'.replace('[id]',str(ids[i]))
+        path1='/data/[username]/similarity-search/models/vaq-testing/analyse-multi-vaq-[id]/results/'.replace('[id]',str(ids[i]))
+        path2='/data/[username]/similarity-search/models/vaq-testing/analyse-mult-vaq-[id]/results/'.replace('[id]',str(ids[i]))
         
         vaq_file_name=vaq_file_list[i]
         if str(ids[i])=='40':

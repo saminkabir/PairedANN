@@ -2,9 +2,9 @@ import pickle
 import os
 import pandas as pd
 import pysvs as ps
-pickle_path='/data/kabir/similarity-search/models/results_pickles_v7/'
+pickle_path='/data/[username]/similarity-search/models/results_pickles_v7/'
 all_results=[]
-os.chdir('/data/kabir/similarity-search/models/results_pickles_v7')
+os.chdir('/data/[username]/similarity-search/models/results_pickles_v7')
 cnt=0
 def getStoredData(dataset,model,k):
     dicts=[]

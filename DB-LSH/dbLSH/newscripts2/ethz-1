@@ -7,7 +7,7 @@ beta=     0.5
 R_min=    1
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 

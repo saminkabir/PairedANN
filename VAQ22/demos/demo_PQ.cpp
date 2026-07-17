@@ -131,9 +131,9 @@ int main(int argc, char* argv[]) {
     int _d = std::stoi(argv[3]);
     size_t nt= std::stoi(argv[4]);
     size_t nq= std::stoi(argv[5]);
-    std::string d_path="/data/kabir/similarity-search/dataset/[dataset]/base.fvecs";
-    std::string q_path="/data/kabir/similarity-search/dataset/[dataset]/query.fvecs";
-    std::string g_path="/data/kabir/similarity-search/dataset/[dataset]/groundtruth.ivecs";
+    std::string d_path="/data/[username]/similarity-search/dataset/[dataset]/base.fvecs";
+    std::string q_path="/data/[username]/similarity-search/dataset/[dataset]/query.fvecs";
+    std::string g_path="/data/[username]/similarity-search/dataset/[dataset]/groundtruth.ivecs";
     replace_all(d_path,"[dataset]",dataset_name);
     replace_all(q_path,"[dataset]",dataset_name);
     replace_all(g_path,"[dataset]",dataset_name);

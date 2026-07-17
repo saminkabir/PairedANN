@@ -7,7 +7,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 

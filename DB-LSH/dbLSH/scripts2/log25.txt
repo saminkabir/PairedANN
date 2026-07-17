@@ -7,7 +7,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/glove/
+Load from new file: /data/[username]/similarity-search/dataset/glove/
 N=    1192514
 dim=  100
 
@@ -81,7 +81,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/lastfm/
+Load from new file: /data/[username]/similarity-search/dataset/lastfm/
 N=    292385
 dim=  65
 
@@ -155,7 +155,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/movielens/
+Load from new file: /data/[username]/similarity-search/dataset/movielens/
 N=    10677
 dim=  150
 
@@ -229,7 +229,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/netflix/
+Load from new file: /data/[username]/similarity-search/dataset/netflix/
 N=    17770
 dim=  300
 
@@ -303,7 +303,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/nytimes/
+Load from new file: /data/[username]/similarity-search/dataset/nytimes/
 N=    290000
 dim=  256
 
@@ -377,7 +377,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/word2vec/
+Load from new file: /data/[username]/similarity-search/dataset/word2vec/
 N=    1000000
 dim=  300
 
@@ -451,7 +451,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/yahoomusic/
+Load from new file: /data/[username]/similarity-search/dataset/yahoomusic/
 N=    136736
 dim=  300
 

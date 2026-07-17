@@ -7,7 +7,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/uqv/
+Load from new file: /data/[username]/similarity-search/dataset/uqv/
 N=    1000000
 dim=  256
 
@@ -76,7 +76,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/random/
+Load from new file: /data/[username]/similarity-search/dataset/random/
 N=    1000000
 dim=  100
 
@@ -145,7 +145,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/astro1m/
+Load from new file: /data/[username]/similarity-search/dataset/astro1m/
 N=    1000000
 dim=  256
 
@@ -214,7 +214,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/seismic1m/
+Load from new file: /data/[username]/similarity-search/dataset/seismic1m/
 N=    1000000
 dim=  256
 
@@ -283,7 +283,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/sald1m/
+Load from new file: /data/[username]/similarity-search/dataset/sald1m/
 N=    1000000
 dim=  128
 
@@ -352,7 +352,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/bigann/
+Load from new file: /data/[username]/similarity-search/dataset/bigann/
 N=    1000000
 dim=  128
 
@@ -421,7 +421,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/space1V/
+Load from new file: /data/[username]/similarity-search/dataset/space1V/
 N=    1000000
 dim=  100
 
@@ -490,7 +490,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/text-to-image/
+Load from new file: /data/[username]/similarity-search/dataset/text-to-image/
 N=    1000000
 dim=  200
 
@@ -559,7 +559,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/gist/
+Load from new file: /data/[username]/similarity-search/dataset/gist/
 N=    1000000
 dim=  960
 
@@ -628,7 +628,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/sift/
+Load from new file: /data/[username]/similarity-search/dataset/sift/
 N=    1000000
 dim=  128
 

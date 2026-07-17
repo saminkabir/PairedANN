@@ -7,7 +7,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/audio/
+Load from new file: /data/[username]/similarity-search/dataset/audio/
 N=    53387
 dim=  192
 
@@ -71,7 +71,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/imageNet/
+Load from new file: /data/[username]/similarity-search/dataset/imageNet/
 N=    2340373
 dim=  150
 
@@ -135,7 +135,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/notre/
+Load from new file: /data/[username]/similarity-search/dataset/notre/
 N=    332668
 dim=  128
 
@@ -199,7 +199,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ukbench/
+Load from new file: /data/[username]/similarity-search/dataset/ukbench/
 N=    1097907
 dim=  128
 
@@ -263,7 +263,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/cifar/
+Load from new file: /data/[username]/similarity-search/dataset/cifar/
 N=    50000
 dim=  512
 
@@ -327,7 +327,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/enron/
+Load from new file: /data/[username]/similarity-search/dataset/enron/
 N=    94987
 dim=  1369
 
@@ -391,7 +391,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/millionSong/
+Load from new file: /data/[username]/similarity-search/dataset/millionSong/
 N=    992272
 dim=  420
 
@@ -455,7 +455,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/MNIST/
+Load from new file: /data/[username]/similarity-search/dataset/MNIST/
 N=    69000
 dim=  784
 
@@ -519,7 +519,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/nuswide/
+Load from new file: /data/[username]/similarity-search/dataset/nuswide/
 N=    268643
 dim=  500
 
@@ -583,7 +583,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/sun/
+Load from new file: /data/[username]/similarity-search/dataset/sun/
 N=    79106
 dim=  512
 
@@ -647,7 +647,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/deep/
+Load from new file: /data/[username]/similarity-search/dataset/deep/
 N=    1000000
 dim=  256
 
@@ -711,7 +711,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/trevi/
+Load from new file: /data/[username]/similarity-search/dataset/trevi/
 N=    99900
 dim=  4096
 

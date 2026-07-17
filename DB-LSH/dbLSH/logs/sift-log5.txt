@@ -7,7 +7,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/sift/
+Load from new file: /data/[username]/similarity-search/dataset/sift/
 N=    1000000
 dim=  128
 

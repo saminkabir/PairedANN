@@ -7,7 +7,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -71,7 +71,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -135,7 +135,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -204,7 +204,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -278,7 +278,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -342,7 +342,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -406,7 +406,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -470,7 +470,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -534,7 +534,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -598,7 +598,7 @@ beta=     0.1
 R_min=    300
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -662,7 +662,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -726,7 +726,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -795,7 +795,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -869,7 +869,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -933,7 +933,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/ethz/
+Load from new file: /data/[username]/similarity-search/dataset/ethz/
 N=    36643
 dim=  256
 
@@ -997,7 +997,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1061,7 +1061,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1125,7 +1125,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1194,7 +1194,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1268,7 +1268,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1332,7 +1332,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1396,7 +1396,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1460,7 +1460,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1524,7 +1524,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1588,7 +1588,7 @@ beta=     0.1
 R_min=    300
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1652,7 +1652,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1716,7 +1716,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1785,7 +1785,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1859,7 +1859,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1923,7 +1923,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/vcseis/
+Load from new file: /data/[username]/similarity-search/dataset/vcseis/
 N=    160178
 dim=  256
 
@@ -1987,7 +1987,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2051,7 +2051,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2115,7 +2115,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2184,7 +2184,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2258,7 +2258,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2322,7 +2322,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2386,7 +2386,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2450,7 +2450,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2514,7 +2514,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2578,7 +2578,7 @@ beta=     0.1
 R_min=    300
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2642,7 +2642,7 @@ beta=     0.1
 R_min=    600
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2706,7 +2706,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2775,7 +2775,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2849,7 +2849,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 
@@ -2913,7 +2913,7 @@ beta=     0.1
 R_min=    6.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/txed/
+Load from new file: /data/[username]/similarity-search/dataset/txed/
 N=    519589
 dim=  256
 

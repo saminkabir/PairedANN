@@ -7,7 +7,7 @@ beta=     0.1
 R_min=    0.5
 
 LOADING DATA...
-Load from new file: /data/kabir/similarity-search/dataset/lendb/
+Load from new file: /data/[username]/similarity-search/dataset/lendb/
 N=    1000000
 dim=  256
 

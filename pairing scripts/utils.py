@@ -2,9 +2,9 @@ import pickle
 import os
 import pandas as pd
 import pysvs as ps
-pickle_path='/data/kabir/similarity-search/models/results_pickles_v7/'
+pickle_path='/data/[username]/similarity-search/models/results_pickles_v7/'
 
-os.chdir('/data/kabir/similarity-search/models/results_pickles_v7')
+os.chdir('/data/[username]/similarity-search/models/results_pickles_v7')
 def getStoredData(fileName):
     with open(pickle_path+fileName, 'rb') as f:
         I = pickle.load(f)
@@ -54,7 +54,7 @@ def get_all_performance_results():
             result=get_performance_results(file,I)
             if result!=None:
                 results.append(result)
-    os.chdir('/data/kabir/similarity-search/models/polyvector_analysis_v1')
+    os.chdir('/data/[username]/similarity-search/models/polyvector_analysis_v1')
     df = pd.DataFrame(results, columns=['model', 'dataset', 'fileName', 'recallx1', 'search_time_x1', 'recallx2', 'search_time_x2', 'recallx3', 'search_time_x3', 'recallx4', 'search_time_x4', 'recallx5', 'search_time_x5','construction-time'])
     df.to_csv('all_augmentation_standalone_graph_methods.csv', index=False)
 
