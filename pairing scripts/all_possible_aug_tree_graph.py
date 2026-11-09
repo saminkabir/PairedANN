@@ -33,6 +33,11 @@ file_names_flatnav=list(set(file_names_flatnav))
 def read_vecs_v1(filePath):
     return ps.read_vecs(filePath)
 
+
+
+def read_vecs(filePath):
+    return ps.read_vecs(dataset_path + filePath)
+
 def get_data_generic(dataset):
     # print(dataset)
     # data we will search through
@@ -47,9 +52,6 @@ xb,xq,gt=get_data_generic(dataset)
 
 def calculate_recall_at(ground_truth, I, k1, k2):
     return ps.k_recall_at(ground_truth, I, k1, k2)
-
-def read_vecs(filePath):
-    return ps.read_vecs(dataset_path + filePath)
 
 
 def getStoredData(fileName):
