@@ -1,3 +1,4 @@
+import argparse
 import pickle
 import os
 import pandas as pd
@@ -11,6 +12,12 @@ pickle_path_2='/data/kabir/similarity-search/models/results_pickles_v8/'
 
 v8_files=os.listdir(pickle_path_2)
 v7_files=os.listdir(pickle_path_1)
+
+parser = argparse.ArgumentParser(description="Run MRPT ANN search on a dataset")
+parser.add_argument("--dataset", type=str, required=True,
+                    help="Name of the dataset (e.g. 'imageNet', 'glove-100')")
+
+dataset = parser.parse_args().dataset
 
 def calculate_recall_at(ground_truth, I, k1, k2):
     return ps.k_recall_at(ground_truth, I, k1, k2)
@@ -145,11 +152,34 @@ def get_dataset_name_from_file(file_name):
 file_path = "graph_results_1.csv"
 df = pd.read_csv(file_path)
 model='FLATNAV'
-filtered = df[(df['model'] == model)]
+filtered = df[(df['model'] == model) & (df['dataset'] == dataset)]
 file_names_flatnav = filtered["fileName"].tolist()
 file_path = "graph_results_2.csv"
 df = pd.read_csv(file_path)
+filtered = df[(df['model'] == model) & (df['dataset'] == dataset)]
 file_names_flatnav.extend(filtered["fileName"].tolist())
+file_names_flatnav=list(set(file_names_flatnav))
+
+xb,xq,gt=get_data_generic(dataset)
+
+standalone_columns=['dataset','model','params1','params2','recall','qps','construction_time']
+standalone_results=[]
+
+for t in [1000,100,10,200,25,400,50,600,75]:
+    tmp='Scann-[dataset]-2000-[t]-250000-2.pkl'
+    qc=200
+    if dataset=='sift':
+        qc=10000
+    scann_file_name=tmp.replace('[t]',str(t))
+    scann_file_name=scann_file_name.replace('[dataset]',str(dataset))
+    pkl_scann=getStoredData(scann_file_name)
+    peram=str(pkl_scann['num_leaves_'])+'-'+str(pkl_scann['num_leaves_to_search_'])+'-'+str(pkl_scann['training_sample_size_'])+'-'+str(pkl_scann['num_neighbors_'])+'-'+str(pkl_scann['anisotropic_quantization_threshold_'])
+    rf_recall_scann=pkl_scann['recallx2']
+    recall_scann=pkl_scann['recall']
+    construction_scann=pkl_scann['construction_time']
+    search_scann=pkl_scann['search_time']
+    search_x2_scann=pkl_scann['search_timex2']
+    standalone_results.append([dataset,'ScaNN',peram,'',rf_recall_scann,qc/search_x2_scann,construction_scann])
 
 
 for flatnav_result in file_names_flatnav:
@@ -159,11 +189,30 @@ for flatnav_result in file_names_flatnav:
         qc=200
         if dataset=='sift':
             qc=10000
-        xb,xq,gt=get_data_generic(dataset)
         I1=getStoredData(flatnav_result)
         construction_time_1=I1['construction_time']
         recall1r=I1['recallx'+str(2)]
         recall1=I1['recall']
         search_time1=I1['search_time']
         search_time1r=I1['search_timex2']
-        
+        standalone_results.append([dataset,'FLATNAV',file_names_flatnav,'',recall1r,qc/search_time1r,construction_time_1])
+        for t in [1000,100,10,200,25,400,50,600,75]:
+            tmp='Scann-[dataset]-2000-[t]-250000-2.pkl'
+            scann_file_name=tmp.replace('[t]',str(t))
+            scann_file_name=scann_file_name.replace('[dataset]',str(dataset))
+            pkl_scann=getStoredData(scann_file_name)
+            peram=str(pkl_scann['num_leaves_'])+'-'+str(pkl_scann['num_leaves_to_search_'])+'-'+str(pkl_scann['training_sample_size_'])+'-'+str(pkl_scann['num_neighbors_'])+'-'+str(pkl_scann['anisotropic_quantization_threshold_'])
+            rf_recall_scann=pkl_scann['recallx2']
+            recall_scann=pkl_scann['recall']
+            I_scann=pkl_scann['I_1']
+            construction_scann=pkl_scann['construction_time']
+            search_scann=pkl_scann['search_time']
+            search_x2_scann=pkl_scann['search_timex2']
+            combined_recall,refine_multiplier,recall_intersection=compute_combined_recall(gt,[I1['I'],I_scann['I']],gt.shape[1])
+            standalone_results.append([dataset,'ScaNN-FLATNAV',peram,file_names_flatnav,combined_recall,qc/min(search_scann,search_time1),max(construction_scann,construction_time_1)])
+
+folder_name='scann-flatnav/'
+
+df_out = pd.DataFrame(standalone_results, columns=standalone_columns)
+output_file = folder_name+"augmented_model_results"+dataset+".csv"
+df_out.to_csv(output_file, index=False)   
