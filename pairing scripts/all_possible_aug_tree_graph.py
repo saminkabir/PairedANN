@@ -19,24 +19,16 @@ parser.add_argument("--dataset", type=str, required=True,
 
 dataset = parser.parse_args().dataset
 
-def calculate_recall_at(ground_truth, I, k1, k2):
-    return ps.k_recall_at(ground_truth, I, k1, k2)
-
-def read_vecs(filePath):
-    return ps.read_vecs(dataset_path + filePath)
-
-
-def getStoredData(fileName):
-    pickle_path=None
-    if fileName in v8_files:
-        pickle_path=pickle_path_2
-    elif fileName in v7_files:
-        pickle_path=pickle_path_1
-    if not pickle_path is None:
-        with open(pickle_path+fileName, 'rb') as f:
-            I = pickle.load(f)
-            return I
-    return None
+file_path = "graph_results_1.csv"
+df = pd.read_csv(file_path)
+model='FLATNAV'
+filtered = df[(df['model'] == model) & (df['dataset'] == dataset)]
+file_names_flatnav = filtered["fileName"].tolist()
+file_path = "graph_results_2.csv"
+df = pd.read_csv(file_path)
+filtered = df[(df['model'] == model) & (df['dataset'] == dataset)]
+file_names_flatnav.extend(filtered["fileName"].tolist())
+file_names_flatnav=list(set(file_names_flatnav))
 
 def read_vecs_v1(filePath):
     return ps.read_vecs(filePath)
@@ -50,6 +42,30 @@ def get_data_generic(dataset):
     # take just one query (there are many in sift_learn.fvecs)
     gt = read_vecs(dataset+'/groundtruth.ivecs')
     return xb,xq,gt
+
+xb,xq,gt=get_data_generic(dataset)
+
+def calculate_recall_at(ground_truth, I, k1, k2):
+    return ps.k_recall_at(ground_truth, I, k1, k2)
+
+def read_vecs(filePath):
+    return ps.read_vecs(dataset_path + filePath)
+
+
+def getStoredData(fileName):
+    global v8_files, v7_files, pickle_path_1, pickle_path_2
+    pickle_path=None
+    if fileName in v8_files:
+        pickle_path=pickle_path_2
+    elif fileName in v7_files:
+        pickle_path=pickle_path_1
+    if not pickle_path is None:
+        with open(pickle_path+fileName, 'rb') as f:
+            I = pickle.load(f)
+            return I
+    return None
+
+
 
 def refined_recall(gt, I_list, k_gt):
     total_hits = 0
@@ -149,18 +165,7 @@ def get_dataset_name_from_file(file_name):
             return dataset
     return None
 
-file_path = "graph_results_1.csv"
-df = pd.read_csv(file_path)
-model='FLATNAV'
-filtered = df[(df['model'] == model) & (df['dataset'] == dataset)]
-file_names_flatnav = filtered["fileName"].tolist()
-file_path = "graph_results_2.csv"
-df = pd.read_csv(file_path)
-filtered = df[(df['model'] == model) & (df['dataset'] == dataset)]
-file_names_flatnav.extend(filtered["fileName"].tolist())
-file_names_flatnav=list(set(file_names_flatnav))
 
-xb,xq,gt=get_data_generic(dataset)
 
 standalone_columns=['dataset','model','params1','params2','recall','qps','construction_time']
 standalone_results=[]
