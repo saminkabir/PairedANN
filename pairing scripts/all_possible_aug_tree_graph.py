@@ -173,7 +173,8 @@ for t in [1000,100,10,200,25,400,50,600,75]:
     scann_file_name=tmp.replace('[t]',str(t))
     scann_file_name=scann_file_name.replace('[dataset]',str(dataset))
     pkl_scann=getStoredData(scann_file_name)
-    peram=str(pkl_scann['num_leaves_'])+'-'+str(pkl_scann['num_leaves_to_search_'])+'-'+str(pkl_scann['training_sample_size_'])+'-'+str(pkl_scann['num_neighbors_'])+'-'+str(pkl_scann['anisotropic_quantization_threshold_'])
+    peram=scann_file_name
+    # peram=str(pkl_scann['num_leaves_'])+'-'+str(pkl_scann['num_leaves_to_search_'])+'-'+str(pkl_scann['training_sample_size_'])+'-'+str(pkl_scann['num_neighbors_'])+'-'+str(pkl_scann['anisotropic_quantization_threshold_'])
     rf_recall_scann=pkl_scann['recallx2']
     recall_scann=pkl_scann['recall']
     construction_scann=pkl_scann['construction_time']
